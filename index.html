@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en_US" />
+        <link rel="stylesheet" href="style/main_style.css">
+        <title>Support</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <header>
+                <img src="img/cof_orange_hex.jpg"/> 
+                <div class="ubuntu">Ubuntu<br/>fuck up assessement form</div>
+                Welcome to ubuntuusers, tell us how you fucked up.<br/>
+            </header>
+            <form id="assesement">
+                <br/>
+                <div class="emotions">
+                    <div class="title">What emotions were going through your head upon fucking up? (check all that apply)</div>
+                    <div class ="content">
+                        <input type="checkbox" id="checkPanic">Panic
+                        <input type="checkbox" id="checkRemorse">Remorse
+                        <input type="checkbox" id="checkIrcElite">Amplified IRC elitism
+                        <input type="checkbox" id="checkFUD">Fear, uncertainty and doubt<br/>
+                        <input type="checkbox" id="checkNerdrage">Nerdrage
+                        <input type="checkbox" id="checkWww">Wah wah wah
+                        <input type="checkbox" id="checkArch">Desire to install Arch
+                        <input type="checkbox" id="checkOtherEmotion">Other (please specify)<input type="text" id="otherEmotion"/>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="title">What initially caused your fuck-up to occur? (check all that apply)</div>
+                    <div class="content">
+                        <input type="checkbox" id="checkSystemd"/>systemd <br/>
+                        <input type="checkbox" id="checkAptPurge"/>apt purge < package ><br/>
+                        <input type="checkbox" id="checkAptInstallForce"/>apt install --force -y < package ><br/>
+                        <input type="checkbox" id="checkPPA"/>add-apt-repository ppa:< ppa name here ><br/>
+                        <input type="checkbox" id="checkDpkg"/>I used dpkg<br/>
+                        <input type="checkbox" id="checkCritPack"/>I installed <input type="text" id="badPackageInstalled"/> (packages)<br/>
+                        <input type="checkbox" id="checkDd"/>I ran dd and now my computer won't boot<br/>
+                        <input type="checkbox" id="checkUbuntuUsers"/>I was too afraid to ask on <a href="https://forum.ubuntuusers.de">Ubuntuusers DE</a><br/>
+                        <input type="checkbox" id="checkArchWiki"/>I looked it up on the Arch Wiki<br/>
+                        <input type="checkbox" id="checkYacha"/>Yacha told me to install Arch Linux<br/>
+                        <input type="checkbox" id="checkTilde"/>I tried to delete file named ~<br/>
+                        <input type="checkbox" id="checkServer"/>I installed Ubuntu Server because I couldn't decide on the flavour<br/>
+                        <input type="checkbox" id="checkDKMS"/>I installed a deprecated DKMS module<br/>
+                        <input type="checkbox" id="checkOtherReason"/>Other (please specify)<input type="text" id="otherReason"/><br/>
+                    </div>
+                </div>
+                <div class="remedy">
+                    <div class="title">What have you tried so far to remedy your fuck-up? (check all that apply)</div>
+                    <div class="content">
+                        <input type="checkbox" id="checkUpgrade"/>apt update && apt upgrade
+                        <input type="checkbox" id="checkReboot"/>Rebooting
+                        <input type="checkbox" id="checkReinstall"/>Reinstalled Ubuntu
+                        <input type="checkbox" id="checkInstallFedora"/>Installed Fedora <br/>
+                        <input type="checkbox" id="checkCrying"/>Crying
+                        <input type="checkbox" id="checkCryIRC"/>Crying in IRC
+                        <input type="checkbox" id="checkOtherRemedy"/>Other (please specify):<input type="text" id="otherRemedy"/><br/>
+                    </div>
+                </div>
+            </form>
+            <button onclick="getResults();">Submit to '/dev/null'</button>
+            <script src="js/main.js"/></script>
+            <footer>
+                Please return the completed form to "/dev/null" in order for your fuck-up to be assessed by a professional<br/><br/>
+                &#169 PanickingLynx 2020
+            </footer>
+        </center>
+    </body>
+</html>
